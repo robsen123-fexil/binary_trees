@@ -19,7 +19,7 @@
 
      if ( !parent )return (NULL);
     new = binary_tree_node(parent, value);
-    if (new == NULL)  return (NULL);
+    if (!new)  return (NULL);
     if (!parent->right )
 {
 	new->right = parent->right;parent->right->parent = new;
