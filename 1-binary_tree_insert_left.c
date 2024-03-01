@@ -19,7 +19,7 @@ if (!parent)return (NULL);
         if (!new)return (NULL);
 	
 
-if (parent->left != NULL)
- {  new->left = parent->left;parent->left->parent = new;}
+     if (parent->left != NULL){  new->left = parent->left;parent->left->parent = new;}
  parent->left = new;   return (new);
 }
+ 
