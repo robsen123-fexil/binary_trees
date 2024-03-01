@@ -15,14 +15,13 @@
    {
     binary_tree_t *new;
 
-if ( !parent )return (NULL);
-new = binary_tree_node(parent, value);
-if (new == NULL)  return (NULL);
-if (!parent->right )
+     if ( !parent )return (NULL);
+    new = binary_tree_node(parent, value);
+    if (new == NULL)  return (NULL);
+    if (!parent->right )
 {
 	new->right = parent->right;parent->right->parent = new;
 }
-parent->right = new;
+parent->right = new;   return (new);
 
-return (new);
 }
