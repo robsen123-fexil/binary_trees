@@ -12,5 +12,15 @@
  binary_tree_height(tree) == floor(log2(binary_tree_size(tree) + 1))) : 
      0;
  
-  }  int _pow_recursion(int x, int y) { return (y < 0 ? -1 : (y == 0 ? 1 : x * _pow_recursion(x, y - 1))); }
-
+  }  int _pow_recursion(int x, int y) { 
+    return 
+                          (y < 0 ? -1 : (y == 0 ? 1 : 
+             x * _pow_recursion(x, y - 1))   
+            );
+     
+     
+     
+     }     size_t binary_tree_size(const binary_tree_t *tree)     {  return tree ? binary_tree_size
+    (tree->left) + binary_tree_size  (tree->right) + 1 : 0;
+    
+     }
