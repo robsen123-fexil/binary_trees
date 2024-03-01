@@ -9,5 +9,5 @@
      *         0 if node is NULL
      */
 
-    int binary_tree_is_root(const binary_tree_t *node) { if ((node == NULL || node->parent) ? 0 : 1)}
+    int binary_tree_is_root(const binary_tree_t *node) { if ((node == NULL || node->parent) ? 0 : 1);}
 
